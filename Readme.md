@@ -21,8 +21,34 @@
 5. The whole process:
 in 'webpack.dev.config.js' file 'entry' is the source code, 'output' is the development file in 'plugins' file, and 'module' used for test es2015 syntax .js file and transfer to es5 file. At last, 'devServer' will create web server to open and renew the 'index.html' page on 'localhost:9000'.
 
+#### 2. Object-Oriented Programming
 
+Concepts:
+'Class' is one javascript object, including property and method.
+```
+class People {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  eat() {
+    console.log(`${this.name}` eat sth);
+  }
+  speak() {
+    console.log(`my name is ${this.name}, age ${this.age}`);
+  }
+}
+```
 
+here, 'People' is class, 'name' and 'age' are properties, and 'eat' and 'speak' are methods;
+
+'object' is the instance of 'class', and 'class' is one class of 'objects'.
+```
+let Rick = new People('Rick', 30);
+Rick.eat();
+Rick.speak();
+```
+here, 'Rick' has name and age, and can eat and speak, which means that 'Rick' can do anything the class 'People' has.
 
 
 

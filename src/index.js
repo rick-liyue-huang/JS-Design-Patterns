@@ -1,16 +1,35 @@
 
 class Person {
-	constructor(name) {
-		this.name = name
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
 	}
 
-	getName() {
-		return this.name
+	eat() {
+		console.log(`${this.name} eat`);
+	}
+
+	speak() {
+		console.log(`${this.age}`);
 	}
 }
 
-let p = new Person('rick');
-alert(p.getName());
+let Rick = new Person('Rick', 30);
+Rick.eat();
+Rick.speak();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
