@@ -162,6 +162,8 @@ b.saySth(); // i am b
 ```
 One sample coded in 'jQuery-sample1.js', here, we define jQuery class, and use constructor and methods to realize the object 'p' inherited from jQuery.
 
+See 'have-glance1.js' and 'have-glance2.js'.
+
 why we use Object-Oriented?
 
 programming run under the following process:
@@ -220,6 +222,8 @@ b.saySth();
 here, A and B inherits from People, and House associates with People.
 ![Image text](./pics/class2.png)
 
+See 'uml3.js'
+
 #### 2.3 Design Philosophy
 
 ##### What's design?
@@ -258,6 +262,8 @@ in file 'S-O-sample.js', each 'then' only focus one thing, and if increas needs,
 Here have two samples to show how to analyze class by UML.
 ![Image text](./pics/sample1.png)
 ![Image text](./pics/sample2.png)
+
+See 'o-s-sample.js', 'sample5.js' and 'sample6.js'
 
 
 #### 2.4 Design Pattern
