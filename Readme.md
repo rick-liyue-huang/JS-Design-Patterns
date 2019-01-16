@@ -220,8 +220,40 @@ b.saySth();
 here, A and B inherits from People, and House associates with People.
 ![Image text](./pics/class2.png)
 
+#### 2.3 Design Philosophy
 
+##### What's design?
+1. Realize some funtions based on some thoughts;
+2. Based on different projects to realize same function;
+3. Combined with more increasingly needs, design become more important;
 
+##### Following some philosophies
+1. Small is beautiful;
+2. Make each program do one thing well;
+3. To do a new job, build afresh rather than complicate old programs by adding new "features";
+4. Expect the output of every program to become the input to another, as yet unknown, program;
+5. Write programs to handle text streams, because that is a universal interface;
+6. Write programs to work together;
+7. Build a prototype as soon as possible;
+8. Choose portability over efficiency.
+
+##### SOLID principles:
+S - Single-responsiblity principle:
+A class should have one and only one reason to change, meaning that a class should have only one job, which means that one project or class only focus one function.
+
+O - Open-closed principle:
+Objects or entities should be open for extension, but closed for modification, which means extend the new codes instead of modify the old codes when increas needs.
+
+L - Liskov substitution principle:
+ every subclass/derived class should be substitutable for their base/parent class.
+
+I - Interface segregation principle:
+A client should never be forced to implement an interface that it doesn't use or clients shouldn't be forced to depend on methods they do not use, here JS use less.
+
+D - Dependency Inversion Principle:
+Entities must depend on abstractions not on concretions. It states that the high level module must not depend on the low level module, but they should depend on abstractions, which means we focus on what the interface but not the how, JS use less.
+
+in file 'S-O-sample.js', each 'then' only focus one thing, and if increas needs, thus increase 'then'
 
 
 

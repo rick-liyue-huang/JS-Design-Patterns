@@ -1,41 +1,50 @@
 
-class People {
-  constructor(name, house) {
-    this.name = name;
-    this.house = house;
-  }
-  saySth() {}
+// give one sample for S and O
+
+function loading(src) {
+	let promise = new Promise((resolve, reject) => {
+		let img = document.createElement('img');
+		img.onload = () => {
+			resolve(img);
+		}
+		img.onerror = () => {
+			reject('err');
+		}
+
+		img.src = src;
+	});
+	return promise;
 }
 
-class A extends People {
-  constructor(name, house) {
-    super(name, house);
-  }
-  saySth() {
-    console.log(`I am A and live in`);
-  }
-}
+let src ='https://cdn-images-1.medium.com/max/2600/1*S4bWCxuUsNDuOKfMtmTbKQ.jpeg';
+let result = loading(src);
 
-class B extends People {
-  constructor(name, house) {
-    super(name, house);
-  }
-  saySth() {
-    console.log(`I am B, `);
-  }
-}
+// S: each 'then' only focus one thing
+// O: if increas needs, thus increase 'then'
 
-class House {
-  constructor(city) {
-    this.city = city;
-  }
-  showCity() {
-    console.log(`house in ${this.city}`);
-  }
-}
+result // part 1
+	.then((img) => {
+	alert(`width: ${img.width}`);
+}) // part 2
+	.then((img) => {
+	alert(`height: ${img.height}`)
+}) // part3
+	.catch((ex) => {alert(ex)})
 
-let ahouse = new House('mel');
-let a = new A('a', ahouse);
-a.saySth();
-let b = new B('b');
-b.saySth();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
