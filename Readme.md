@@ -173,7 +173,7 @@ computer believe contructored one is simple one.
 
 class diagram and methods
 
-![Image text](https://github.com/rick-liyue-huang/JS-Design-Patterns/blob/master/pics/classPeople.webarchive)
+![Image text](./pics/classPeople.png)
 
 
 
