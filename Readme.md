@@ -171,7 +171,7 @@ computer believe contructored one is simple one.
 
 #### 2.2 UML - Unified Modeling Language
 
-Based on we talked before, we can give one UML diagram for 'People' class.
+Based on we talked before, we can give one UML diagram for 'People' class, including name and age properties and eat and speak methods.
 ![Image text](./pics/classPeople.png)
 
 And also give the relationship between classes, cluding inheritance and association.
