@@ -171,9 +171,66 @@ computer believe contructored one is simple one.
 
 #### 2.2 UML - Unified Modeling Language
 
-class diagram and methods
-
+Based on we talked before, we can give one UML diagram for 'People' class.
 ![Image text](./pics/classPeople.png)
+
+And also give the relationship between classes, cluding inheritance and association.
+```
+class People {
+  constructor(name, house) {
+    this.name = name;
+    this.house = house;
+  }
+  saySth() {}
+}
+
+class A extends People {
+  constructor(name, house) {
+    super(name, house);
+  }
+  saySth() {
+    console.log('I am A');
+  }
+}
+
+class B extends People {
+  constructor(name, house) {
+    super(name, house);
+  }
+  saySth() {
+    console.log('I am B');
+  }
+}
+
+class House {
+  constructor(city) {
+    this.city = city;
+  }
+  showCity() {
+    console.log(`house in ${this.city}`);
+  }
+}
+
+let ahouse = new House('mel');
+let a = new A('a', ahouse);
+a.saySth();
+let b = new B('b');
+b.saySth();
+```
+here, A and B inherits from People, and House associates with People.
+![Image text](./pics/class2.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,47 +1,41 @@
 
-// sample in jQuery
-
-// constructor class
-class jQuery {
-	constructor(select) {
-		let slice = Array.prototype.slice
-		// get dom array
-		let dom = slice.call(document.querySelectorAll(select));
-		let len = dom ? dom.length : 0;
-		for(let i = 0; i < len; i++) {
-			this[i] = dom[i];
-		}
-		this.length = len;
-		this.selector = select || '';
-	}
-	// so the return instance will be like {0:, 1: , 2: , length: , selector: }
-
-	append(node) {
-		// ....
-	}
-
-	addClass(name) {
-		console.log('addClass');
-		// ...
-	}
-
-	html(data) {
-		// ....
-	}
+class People {
+  constructor(name, house) {
+    this.name = name;
+    this.house = house;
+  }
+  saySth() {}
 }
 
-window.$ = function(select) {
-	// factory pattern
-	return new jQuery(select);
+class A extends People {
+  constructor(name, house) {
+    super(name, house);
+  }
+  saySth() {
+    console.log(`I am A and live in`);
+  }
 }
 
-var $p = $('p');
-console.log($p);
-console.log($p.addClass);
+class B extends People {
+  constructor(name, house) {
+    super(name, house);
+  }
+  saySth() {
+    console.log(`I am B, `);
+  }
+}
 
+class House {
+  constructor(city) {
+    this.city = city;
+  }
+  showCity() {
+    console.log(`house in ${this.city}`);
+  }
+}
 
-
-
-
-
-
+let ahouse = new House('mel');
+let a = new A('a', ahouse);
+a.saySth();
+let b = new B('b');
+b.saySth();
