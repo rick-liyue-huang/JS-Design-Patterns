@@ -255,6 +255,11 @@ Entities must depend on abstractions not on concretions. It states that the high
 
 in file 'S-O-sample.js', each 'then' only focus one thing, and if increas needs, thus increase 'then'
 
+Here have two samples to show how to analyze class by UML.
+![Image text](./pics/sample1.png)
+![Image text](./pics/sample2.png)
+
+
 #### 2.4 Design Pattern
 
 ##### 2.4.1 Introduction
@@ -262,6 +267,8 @@ It contains 23 kinds of design pattern, which are,
 Creational Patterns: Factories, Singleton and Prototype,
 Structural Patterns: Adapter, Decorator, Proxy, Facade and (Bridge, Composite, Flyweight),
 Behavioral Patterns: Observer, Iterator, State and (Chain of Resp, Command, Mediator, Memento, Strategy, Template, Visitor)
+
+Here
 
 ##### 2.4.2 
 
