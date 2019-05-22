@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id='div1'>
+    <a href="#">a1</a>
+    <a href="#">a2</a>
+    <a href="#">a3</a>
+    <a href="#">a4</a>
+    <a href="#">a5</a>
+    <a href="#">a6</a>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.js"></script>
+  <script>
+    // var div1 = document.getElementById('div1');
+    // div1.addEventListener('click', function(e) {
+    //   var tartget = e.target;
+    //   if(tartget.nodeName === 'A') {
+    //     console.log(tartget.innerHTML)
+    //   }
+    // })
+    // $('#div1').click(function() {
+    //   var _this = this;
+    //   setTimeout(function() {
+    //     console.log(_this);
+    //     $(_this).css('font-size', '20px')
+    //   }, 1000);
+    // })
+
+    $('#div1').click(function() {
+      var fn = function() {
+        $(this).css('font-size', '20px');
+      }
+      fn = $.proxy(fn, this); // add proxy
+      setTimeout(fn, 1000);
+    })
+  </script>
+</body>
+</html>
