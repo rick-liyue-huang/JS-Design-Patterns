@@ -167,8 +167,8 @@ See 'have-glance1.js' and 'have-glance2.js'.
 why we use Object-Oriented?
 
 programming run under the following process:
-(sequence, judge, loop) construct.
-oo: data constructor.
+(sequence, judgement, loop) construct.
+oo: data constructoring.
 computer believe contructored one is simple one.
 
 #### 2.2 UML - Unified Modeling Language
@@ -227,7 +227,7 @@ See 'uml3.js'
 #### 2.3 Design Philosophy
 
 ##### What's design?
-1. Realize some funtions based on some thoughts;
+1. Realize some functions based on some thought
 2. Based on different projects to realize same function;
 3. Combined with more increasingly needs, design become more important;
 
@@ -277,6 +277,9 @@ Behavioral Patterns: Observer, Iterator, State and (Chain of Resp, Command, Medi
 Here
 
 ##### 2.4.2 
+
+将 new 操作单独封装
+遇到new的时候，就要考虑工厂模式
 
 
 
