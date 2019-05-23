@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "js design pattern",
+    "price": 60
+  },
+  {
+    "id": 2,
+    "name": "js professional",
+    "price": 66
+  },
+  {
+    "id": 3,
+    "name": "js good parts",
+    "price": 90
+  }
+]

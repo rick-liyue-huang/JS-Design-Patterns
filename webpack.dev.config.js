@@ -28,7 +28,13 @@ module.exports = {
 	devServer: {
 		contentBase: path.join(__dirname, './release'),
 		open: true,
-		port: 9000
+		port: 9000,
+		// add proxy by run 'demo liyue$ http-server -p 8880'
+		proxy: {
+			'/api/*': {
+				target: 'http://localhost:8880'
+			}
+		}
 	}
 }
 
